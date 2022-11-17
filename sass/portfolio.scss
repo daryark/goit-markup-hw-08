@@ -1,0 +1,21 @@
+@import "./base/var";
+@import "./base/reset";
+@import "./base/body";
+
+@import "./utils/container";
+@import "./utils/section";
+@import "./utils/visually-hidden";
+@import "./utils/thumb";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+@import "./components/common/logo";
+@import "./components/common/primary-btn";
+@import "./components/common/socials";
+
+@import "./components/header";
+@import "./components/filter-buttons";
+@import "./components/portfolio";
+@import "./components/footer";
+@import "./components/footer-address";
+@import "./components/footer-form";

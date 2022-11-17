@@ -1,0 +1,143 @@
+.nav__list,
+.contacts {
+	display: none;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+// .header {
+// 	border-bottom: 1px solid #ececec;
+
+// 	&__container {
+// 		display: flex;
+// 		align-items: center;
+// 	}
+// }
+
+// .menu-btn {
+// 	background-color: transparent;
+// 	border: none;
+
+// 	& .btn-close,
+// 	&.is-open .menu-burger {
+// 		display: none;
+// 	}
+
+// 	&.is-open .btn-close {
+// 		display: block;
+// 	}
+// }
+
+// .nav {
+// 	display: flex;
+// 	align-items: center;
+
+// 	&__logo {
+// 		margin-right: 93px;
+// 		padding-top: 24px;
+// 		padding-bottom: 24px;
+// 	}
+
+// 	&__list {
+// 		// display: flex;
+// 		display: none;
+// 		gap: 50px;
+// 	}
+
+// 	&__item {
+// 		// display: flex;
+// 		display: none;
+// 		align-items: center;
+// 	}
+
+// 	&__link {
+// 		position: relative;
+// 		padding: 32px 0;
+// 		color: currentColor;
+// 		@include transition();
+// 	}
+
+// 	&__link:hover,
+// 	&__link:focus {
+// 		color: var(--accent-color);
+// 	}
+
+// 	&__link::after {
+// 		content: "";
+// 		position: absolute;
+// 		bottom: -1px;
+// 		display: block;
+
+// 		width: 100%;
+// 		height: 4px;
+
+// 		font-weight: 500;
+// 		font-size: 14px;
+// 		letter-spacing: 0.02em;
+// 		line-height: var(--line-height-auto);
+
+// 		background-color: var(--accent-color);
+// 		border-radius: 2px;
+
+// 		transform: scaleX(0);
+// 		@include transition(transform);
+// 	}
+
+// 	&__link:hover::after,
+// 	&__link:focus::after {
+// 		transform: scaleX(1);
+// 	}
+// }
+
+// .nav__link--active {
+// 	color: var(--accent-color);
+
+// 	&::after {
+// 		transform: scaleX(1);
+// 	}
+
+// 	&:hover::after,
+// 	&:focus::after {
+// 		animation: 250ms scale 1 normal cubic-bezier(0.4, 0, 0.2, 1);
+// 	}
+// }
+// @keyframes scale {
+// 	0% {
+// 		transform: scaleX(0);
+// 	}
+// 	100% {
+// 		transform: scaleX(1);
+// 	}
+// }
+
+// .contacts {
+// 	@extend %grid;
+// 	margin-left: auto;
+// 	align-items: center;
+
+// 	&__icon--left {
+// 		margin-right: 10px;
+// 	}
+// }
+
+// .contacts__link {
+// 	position: relative;
+// 	display: inline-flex;
+// 	align-items: center;
+// 	padding: 32px 0;
+
+// 	font-weight: 500;
+// 	font-size: 14px;
+// 	letter-spacing: 0.02em;
+// 	line-height: var(--line-height-auto);
+
+// 	color: var(--second-color);
+
+// 	@include transition();
+
+// 	&:hover,
+// 	&:focus {
+// 		color: var(--accent-color);
+// 	}
+// }

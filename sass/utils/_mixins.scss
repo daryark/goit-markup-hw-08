@@ -1,0 +1,27 @@
+@mixin transition($property: color) {
+	transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin transition-double($propertyOne, $propertyTwo: color) {
+	transition: $propertyOne 250ms cubic-bezier(0.4, 0, 0.2, 1), $propertyTwo 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin grid($wrap: wrap, $gap: 30px) {
+	display: flex;
+	gap: $gap;
+	flex-wrap: $wrap;
+}
+@mixin grid-item($cards, $gaps: $cards - 1) {
+	width: calc((100% - 30px * $gaps) / $cards);
+}
+
+@mixin flex($justify-content: center) {
+	display: flex;
+	justify-content: $justify-content;
+	align-items: center;
+}
+
+@mixin centered-col($margin) {
+	margin: 0 auto;
+	margin-bottom: $margin;
+}

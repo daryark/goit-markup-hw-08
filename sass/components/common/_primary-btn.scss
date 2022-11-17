@@ -1,0 +1,23 @@
+.primary-btn {
+	@include flex();
+	margin: 0 auto;
+	padding: 10px 32px;
+	min-width: 200px;
+
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: var(--big-letter-spacing);
+	line-height: 1.88;
+
+	color: var(--inverse-color);
+	background-color: var(--accent-color);
+
+	border-style: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	@include transition(background-color);
+
+	&:hover,
+	&:focus {
+		background-color: var(--button-hover);
+	}
+}

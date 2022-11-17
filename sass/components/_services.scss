@@ -1,0 +1,42 @@
+.services {
+	display: none;
+}
+@media screen and(min-width: 1200px) {
+	.services {
+		display: block;
+
+		&__content {
+			@include flex();
+			position: absolute;
+			bottom: 0;
+			padding: 27px;
+
+			width: 100%;
+			height: 70px;
+
+			background-color: rgba(47, 48, 58, 0.8);
+		}
+
+		&__text {
+			margin: 0;
+
+			font-weight: 700;
+			font-size: 14px;
+			line-height: var(--line-height-auto);
+			letter-spacing: var(--letter-spacing);
+			// @extend %uppercase;
+
+			color: var(--inverse-color);
+		}
+	}
+}
+
+@media screen and(min-width: 1200px) {
+	.grid-three {
+		@include grid();
+
+		&__item {
+			@include grid-item(3);
+		}
+	}
+}

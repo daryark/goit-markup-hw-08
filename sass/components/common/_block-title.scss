@@ -1,0 +1,16 @@
+.title {
+	margin-bottom: 30px;
+	text-align: center;
+
+	font-weight: 700;
+	font-size: 28px;
+	line-height: var(--line-height-auto);
+	letter-spacing: var(--letter-spacing);
+
+	@media screen and(min-width: 1200px) {
+		& {
+			margin-bottom: 50px;
+			font-size: 36px;
+		}
+	}
+}

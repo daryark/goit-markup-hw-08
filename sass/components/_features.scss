@@ -1,0 +1,41 @@
+@media screen and(min-width: 768px) {
+	.grid-four {
+		@include grid();
+
+		&__item {
+			@include grid-item(2);
+
+			@media screen and(min-width: 1200px) {
+				& {
+					@include grid-item(4);
+				}
+			}
+		}
+	}
+}
+
+.features {
+	&__bg {
+		@include flex();
+		height: 120px;
+		margin-bottom: 30px;
+
+		background-color: var(--grey-bg);
+	}
+	&__title {
+		margin-bottom: 10px;
+
+		font-weight: 700;
+		font-size: 14px;
+		line-height: var(--line-height-auto);
+		letter-spacing: var(--letter-spacing);
+		@extend %uppercase;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 1.5;
+		letter-spacing: var(--letter-spacing);
+
+		color: var(--second-color);
+	}
+}

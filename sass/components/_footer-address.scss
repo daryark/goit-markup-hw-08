@@ -1,0 +1,28 @@
+.address {
+	display: grid;
+	justify-content: center;
+	gap: 9px;
+
+	@media screen and(max-width: 1199px) {
+		&__item {
+			@include flex();
+		}
+	}
+	&__link {
+		display: block;
+		font-size: 14px;
+		line-height: 1.5;
+
+		color: rgba(255, 255, 255, 0.6);
+		@include transition();
+
+		&:hover,
+		&:focus {
+			color: var(--accent-color);
+		}
+	}
+
+	&__link--light {
+		color: var(--inverse-color);
+	}
+}
