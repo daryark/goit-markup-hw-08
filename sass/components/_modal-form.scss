@@ -1,5 +1,4 @@
 .modal-form {
-	width: 448px;
 	margin: 0 auto;
 	color: var(--main-color);
 
@@ -94,16 +93,22 @@
 	margin-bottom: 30px;
 
 	&__label {
-		font-size: 14px;
+		font-size: 12px;
 		line-height: 1.71;
 
 		letter-spacing: var(--letter-spacing);
+
+		@media screen and(min-width: 1200px) {
+			& {
+				font-size: 14px;
+			}
+		}
 	}
 
 	&__input {
 		margin-right: 7px;
 
-		width: 16px;
+		min-width: 16px;
 		height: 15px;
 		border: 2px solid var(--main-color);
 		border-radius: 2px;

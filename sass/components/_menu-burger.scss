@@ -1,0 +1,130 @@
+@media screen and(max-width: 767px) {
+	.menu-btn {
+		margin-left: auto;
+		background-color: transparent;
+		border: none;
+
+		transform: rotateX(0);
+		@include transition-double(transform);
+
+		&:hover,
+		&:focus {
+			color: var(--accent-color);
+			transform: rotateX(90deg);
+		}
+	}
+
+	.menu {
+		padding-left: 40px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--light-bg);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		opacity: 1;
+		@include transition(opacity);
+
+		.menu-btn:hover &,
+		.menu-btn:focus & {
+			opacity: 0;
+		}
+
+		&.is-hidden {
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		&__btn-close {
+			position: absolute;
+			top: 10px;
+			right: 15px;
+
+			background-color: transparent;
+			border: none;
+
+			transform: rotate(0);
+			@include transition-double(transform);
+
+			&:hover,
+			&:focus {
+				color: var(--accent-color);
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+	.menu-nav {
+		&__list {
+			margin-top: 48px;
+			display: flex;
+			flex-direction: column;
+			gap: 32px;
+		}
+		&__link {
+			font-weight: 500;
+			font-size: 40px;
+			line-height: var(--line-height-auto);
+			letter-spacing: 0.02em;
+			@include transition();
+
+			&--active,
+			&:hover,
+			&:focus {
+				color: var(--accent-color);
+			}
+		}
+	}
+	.menu-contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		margin-bottom: 64px;
+
+		&__tel {
+			margin-bottom: 32px;
+			font-weight: 500;
+			font-size: 34px;
+			line-height: var(--line-height-auto);
+			letter-spacing: 0.02em;
+
+			color: var(--accent-color);
+		}
+
+		&__email {
+			margin-bottom: 64px;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 28px;
+			letter-spacing: 0.02em;
+
+			color: var(--second-color);
+		}
+	}
+
+	.menu-socials {
+		@include grid(20px);
+		margin-bottom: 48px;
+
+		&__link {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 1.22;
+
+			letter-spacing: 0.02em;
+
+			color: var(--accent-color);
+		}
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.menu-btn {
+		display: none;
+	}
+}

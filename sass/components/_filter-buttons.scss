@@ -1,1 +1,31 @@
+.filters {
+	@include grid(8px);
+	margin-bottom: 40px;
+}
+.filters__btn {
+	padding: 6px 22px;
+	text-align: center;
 
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.63;
+	letter-spacing: var(--letter-spacing);
+
+	background-color: var(--grey-bg);
+	border-style: none;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&--active {
+		color: var(--inverse-color);
+		background-color: var(--accent-color);
+		box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+	}
+
+	&:hover,
+	&:focus {
+		color: var(--inverse-color);
+		background-color: var(--accent-color);
+		box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+	}
+}

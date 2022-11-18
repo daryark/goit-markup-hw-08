@@ -4,24 +4,31 @@
 
 	background-color: var(--dark-bg);
 
-	&__container {
-		@include centered-col(60px);
-
-		@media screen and(min-width: 1200px) {
+	&__wrapper {
+		@media screen and(max-width: 1199px) {
 			& {
-				display: flex;
-				align-items: baseline;
-				gap: 70px;
-				max-width: 1200px;
+				@include centered-col(60px);
 			}
 		}
 	}
-
-	&__wrapper {
-		@include centered-col(60px);
-	}
 }
 
+.footer__container {
+	@media screen and(max-width: 1199px) {
+		& {
+			@include centered-col(60px);
+		}
+	}
+
+	@media screen and(min-width: 1200px) {
+		& {
+			display: flex;
+			align-items: baseline;
+			gap: 70px;
+			max-width: 1200px;
+		}
+	}
+}
 .footer__logo {
 	margin-bottom: 20px;
 
