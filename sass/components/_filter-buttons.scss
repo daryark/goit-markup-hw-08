@@ -1,6 +1,11 @@
 .filters {
 	@include grid(8px);
 	margin-bottom: 40px;
+
+	@media screen and(min-width: 768px) {
+		justify-content: center;
+		margin-bottom: 30px;
+	}
 }
 .filters__btn {
 	padding: 6px 22px;

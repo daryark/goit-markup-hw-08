@@ -25,10 +25,10 @@
 					<a href="./index.html" class="logo nav__logo"> <span class="logo__accent">Web</span>Studio</a>
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a href="./index.html" class="nav__link nav__link--active">Студія</a>
+							<a href="./index.html" class="nav__link">Студія</a>
 						</li>
 						<li class="nav__item">
-							<a href="./portfolio.html" class="nav__link">Портфоліо</a>
+							<a href="./portfolio.html" class="nav__link nav__link--active">Портфоліо</a>
 						</li>
 						<li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
 					</ul>
@@ -82,11 +82,18 @@
 							<button type="button" class="filters__btn">Маркетинг</button>
 						</li>
 					</ul>
-					<ul class="grid-three grid-three--flex-wrap">
+					<ul class="grid-three">
 						<li class="grid-three__item">
 							<a href="" class="product">
 								<div class="thumb">
-									<img src="./images/portfolio-img1.jpg" alt="Ноутбук з відкритим сайтом на ньому" width="370" />
+									<picture>
+								<source srcset="./images/portfolio/desktop/portfolio-img1.jpg 1x, ./images/portfolio/desktop/portfolio-img1-2x.jpg 2x" media="(min-width: 1200px)" />
+
+								<source srcset="./images/portfolio/tab/portfolio-img1-tab.jpg 1x, ./images/portfolio/tab/portfolio-img1-tab2x.jpg 2x" media="(min-width: 768px)" />
+
+								<source srcset="./images/portfolio/mob/portfolio-img1-mob.jpg 1x, ./images/portfolio/mob/portfolio-img1-mob2x.jpg 2x" media="(max-width: 767px)" />
+							</picture>
+							<img src="./images/portfolio/mob/portfolio-img1-mob.jpg" alt="Ноутбук з відкритим сайтом на ньому" width="450" height="294" />
 									<div class="thumb__content">
 										<p class="thumb__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -103,7 +110,14 @@
 						<li class="grid-three__item">
 							<a href="" class="product">
 								<div class="thumb">
-									<img src="./images/portfolio-img2.jpg" alt="Два гравці з баскетбольним м'ячем" width="370" />
+									<picture>
+								<source srcset="./images/portfolio/desktop/portfolio-img2.jpg 1x, ./images/portfolio/desktop/portfolio-img2-2x.jpg 2x" media="(min-width: 1200px)" />
+
+								<source srcset="./images/portfolio/tab/portfolio-img2-tab.jpg 1x, ./images/portfolio/tab/portfolio-img2-tab2x.jpg 2x" media="(min-width: 768px)" />
+
+								<source srcset="./images/portfolio/mob/portfolio-img2-mob.jpg 1x, ./images/portfolio/mob/portfolio-img2-mob2x.jpg 2x" media="(max-width: 767px)" />
+							</picture>
+							<img src="./images/portfolio/mob/portfolio-img2-mob.jpg" alt="Два гравці з баскетбольним м'ячем" width="450" height="294" />
 									<div class="thumb__content">
 										<p class="thumb__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -120,7 +134,14 @@
 						<li class="grid-three__item">
 							<a href="" class="product">
 								<div class="thumb">
-									<img src="./images/portfolio-img3.jpg" alt="Логотип ресторану морепродуктів з зображенням риби на фоні" width="370" />
+									<picture>
+								<source srcset="./images/portfolio/desktop/portfolio-img3.jpg 1x, ./images/portfolio/desktop/portfolio-img3-2x.jpg 2x" media="(min-width: 1200px)" />
+
+								<source srcset="./images/portfolio/tab/portfolio-img3-tab.jpg 1x, ./images/portfolio/tab/portfolio-img3-tab2x.jpg 2x" media="(min-width: 768px)" />
+
+								<source srcset="./images/portfolio/mob/portfolio-img3-mob.jpg 1x, ./images/portfolio/mob/portfolio-img3-mob2x.jpg 2x" media="(max-width: 767px)" />
+							</picture>
+							<img src="./images/portfolio/mob/portfolio-img3-mob.jpg" alt="Логотип ресторану морепродуктів з зображенням риби на фоні" width="450" height="294" />
 									<div class="thumb__content">
 										<p class="thumb__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -137,7 +158,14 @@
 						<li class="grid-three__item">
 							<a href="" class="product">
 								<div class="thumb">
-									<img src="./images/portfolio-img4.jpg" alt="Навушники" width="370" />
+									<picture>
+								<source srcset="./images/portfolio/desktop/portfolio-img4.jpg 1x, ./images/portfolio/desktop/portfolio-img4-2x.jpg 2x" media="(min-width: 1200px)" />
+
+								<source srcset="./images/portfolio/tab/portfolio-img4-tab.jpg 1x, ./images/portfolio/tab/portfolio-img4-tab2x.jpg 2x" media="(min-width: 768px)" />
+
+								<source srcset="./images/portfolio/mob/portfolio-img4-mob.jpg 1x, ./images/portfolio/mob/portfolio-img4-mob2x.jpg 2x" media="(max-width: 767px)" />
+							</picture>
+							<img src="./images/portfolio/mob/portfolio-img4-mob.jpg" alt="Навушники" width="450" height="294" />
 									<div class="thumb__content">
 										<p class="thumb__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -154,7 +182,14 @@
 						<li class="grid-three__item">
 							<a href="" class="product">
 								<div class="thumb">
-									<img src="./images/portfolio-img5.jpg" alt="Дві коробки" width="370" />
+									<picture>
+								<source srcset="./images/portfolio/desktop/portfolio-img5.jpg 1x, ./images/portfolio/desktop/portfolio-img5-2x.jpg 2x" media="(min-width: 1200px)" />
+
+								<source srcset="./images/portfolio/tab/portfolio-img5-tab.jpg 1x, ./images/portfolio/tab/portfolio-img5-tab2x.jpg 2x" media="(min-width: 768px)" />
+
+								<source srcset="./images/portfolio/mob/portfolio-img5-mob.jpg 1x, ./images/portfolio/mob/portfolio-img5-mob2x.jpg 2x" media="(max-width: 767px)" />
+							</picture>
+							<img src="./images/portfolio/mob/portfolio-img5-mob.jpg" alt="Дві коробки" width="450" height="294" />
 									<div class="thumb__content">
 										<p class="thumb__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -171,7 +206,14 @@
 						<li class="grid-three__item">
 							<a href="" class="product">
 								<div class="thumb">
-									<img src="./images/portfolio-img6.jpg" alt="Комп'ютер з відкритим сайтом" width="370" />
+									<picture>
+								<source srcset="./images/portfolio/desktop/portfolio-img6.jpg 1x, ./images/portfolio/desktop/portfolio-img6-2x.jpg 2x" media="(min-width: 1200px)" />
+
+								<source srcset="./images/portfolio/tab/portfolio-img6-tab.jpg 1x, ./images/portfolio/tab/portfolio-img6-tab2x.jpg 2x" media="(min-width: 768px)" />
+
+								<source srcset="./images/portfolio/mob/portfolio-img6-mob.jpg 1x, ./images/portfolio/mob/portfolio-img6-mob2x.jpg 2x" media="(max-width: 767px)" />
+							</picture>
+							<img src="./images/portfolio/mob/portfolio-img6-mob.jpg" alt="Комп'ютер з відкритим сайтом" width="450" height="294" />
 									<div class="thumb__content">
 										<p class="thumb__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -188,7 +230,14 @@
 						<li class="grid-three__item">
 							<a href="" class="product">
 								<div class="thumb">
-									<img src="./images/portfolio-img7.jpg" alt="Журнал" width="370" />
+									<picture>
+								<source srcset="./images/portfolio/desktop/portfolio-img7.jpg 1x, ./images/portfolio/desktop/portfolio-img7-2x.jpg 2x" media="(min-width: 1200px)" />
+
+								<source srcset="./images/portfolio/tab/portfolio-img7-tab.jpg 1x, ./images/portfolio/tab/portfolio-img7-tab2x.jpg 2x" media="(min-width: 768px)" />
+
+								<source srcset="./images/portfolio/mob/portfolio-img7-mob.jpg 1x, ./images/portfolio/mob/portfolio-img7-mob2x.jpg 2x" media="(max-width: 767px)" />
+							</picture>
+							<img src="./images/portfolio/mob/portfolio-img7-mob.jpg"alt="Журнал" width="450" height="294"" />
 									<div class="thumb__content">
 										<p class="thumb__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -205,7 +254,14 @@
 						<li class="grid-three__item">
 							<a href="" class="product">
 								<div class="thumb">
-									<img src="./images/portfolio-img8.jpg" alt="Бірка з логотипом бренду" width="370" />
+									<picture>
+								<source srcset="./images/portfolio/desktop/portfolio-img8.jpg 1x, ./images/portfolio/desktop/portfolio-img8-2x.jpg 2x" media="(min-width: 1200px)" />
+
+								<source srcset="./images/portfolio/tab/portfolio-img8-tab.jpg 1x, ./images/portfolio/tab/portfolio-img8-tab2x.jpg 2x" media="(min-width: 768px)" />
+
+								<source srcset="./images/portfolio/mob/portfolio-img8-mob.jpg 1x, ./images/portfolio/mob/portfolio-img8-mob2x.jpg 2x" media="(max-width: 767px)" />
+							</picture>
+							<img src="./images/portfolio/mob/portfolio-img8-mob.jpg" alt="Бірка з логотипом бренду" width="450" height="294" />
 									<div class="thumb__content">
 										<p class="thumb__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -222,7 +278,14 @@
 						<li class="grid-three__item">
 							<a href="" class="product">
 								<div class="thumb">
-									<img src="./images/portfolio-img9.jpg" alt="Людина працює за ноутбуком" width="370" />
+									<picture>
+								<source srcset="./images/portfolio/desktop/portfolio-img9.jpg 1x, ./images/portfolio/desktop/portfolio-img9-2x.jpg 2x" media="(min-width: 1200px)" />
+
+								<source srcset="./images/portfolio/tab/portfolio-img9-tab.jpg 1x, ./images/portfolio/tab/portfolio-img9-tab2x.jpg 2x" media="(min-width: 768px)" />
+
+								<source srcset="./images/portfolio/mob/portfolio-img9-mob.jpg 1x, ./images/portfolio/mob/portfolio-img9-mob2x.jpg 2x" media="(max-width: 767px)" />
+							</picture>
+							<img src="./images/portfolio/mob/portfolio-img9-mob.jpg" alt="Людина працює за ноутбуком" width="450" height="294" />
 									<div class="thumb__content">
 										<p class="thumb__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні

@@ -1,8 +1,7 @@
 .services {
 	display: none;
-}
-@media screen and(min-width: 1200px) {
-	.services {
+
+	@media screen and(min-width: 1200px) {
 		display: block;
 
 		&__content {
@@ -24,11 +23,13 @@
 			font-size: 14px;
 			line-height: var(--line-height-auto);
 			letter-spacing: var(--letter-spacing);
-			// @extend %uppercase;
 
 			color: var(--inverse-color);
 		}
 	}
+}
+.services__text {
+	@extend %uppercase;
 }
 
 @media screen and(min-width: 1200px) {
