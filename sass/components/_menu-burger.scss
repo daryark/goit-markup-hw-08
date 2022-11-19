@@ -35,6 +35,9 @@
 		opacity: 1;
 		@include transition(opacity);
 
+		@media screen and(max-width: 430px) {
+			padding-left: 20px;
+		}
 		.menu-btn:hover &,
 		.menu-btn:focus & {
 			opacity: 0;
@@ -113,10 +116,13 @@
 	}
 
 	.menu-socials {
-		@include grid(20px);
+		@include flex(start);
+		margin-left: -10px;
 		margin-bottom: 48px;
 
 		&__link {
+			padding: 0 10px;
+
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 1.22;
@@ -124,6 +130,9 @@
 			letter-spacing: 0.02em;
 
 			color: var(--accent-color);
+		}
+		&__item:not(:last-child) {
+			border-right: 1px solid var(--main-color);
 		}
 	}
 }
