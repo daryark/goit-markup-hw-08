@@ -75,34 +75,10 @@ body.modal-open {
   margin: 0 auto;
   padding: 0 15px;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .section--no-top-padding {
-    padding-top: 0;
-  }
 }
 .section--grey-bg {
   background-color: var(--grey-bg);
@@ -496,7 +472,6 @@ input[type=radio].visually-hidden {
 @media screen and (max-width: 1199px) {
   .footer__container {
     margin: 0 auto;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -538,13 +513,6 @@ input[type=radio].visually-hidden {
   justify-content: center;
   gap: 9px;
 }
-@media screen and (max-width: 1199px) {
-  .address__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .address__link {
   display: block;
   font-size: 14px;
@@ -562,6 +530,7 @@ input[type=radio].visually-hidden {
 @media screen and (min-width: 1200px) {
   .mail-form {
     margin-left: auto;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {

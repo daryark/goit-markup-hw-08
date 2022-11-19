@@ -2,14 +2,14 @@
 	display: grid;
 	gap: 30px;
 
-	@media screen and(min-width: 768px) {
+	@include tab {
 		& {
 			@include grid();
 
 			&__item {
 				@include grid-item(2);
 
-				@media screen and(min-width: 1200px) {
+				@include pc {
 					& {
 						@include grid-item(4);
 					}
@@ -30,7 +30,7 @@
 .team__content {
 	padding: 30px 0 24px;
 
-	@media screen and(min-width: 1200px) {
+	@include pc {
 		padding: 30px 0;
 	}
 }

@@ -395,28 +395,24 @@ input[type=radio].visually-hidden {
     background-image: var(--hero-gradient), url(../images/hero/mob/hero-bg-img-mob2x.jpg);
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
   .hero-section {
     background-image: var(--hero-gradient), url(../images/hero/tab/hero-bg-img-tab.jpg);
   }
 }
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: var(--hero-gradient), url(../images/hero/tab/hero-bg-img-tab2x.jpg);
   }
 }
-@media screen and (min-width: 481px) and (min-width: 768px) {
+@media screen and (min-width: 480px) and (min-width: 768px) {
   .hero-section {
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .hero-section {
     background-image: var(--hero-gradient), url(../images/hero/desktop/hero-bg-img.jpg);
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: var(--hero-gradient), url(../images/hero/desktop/hero-bg-img2x.jpg);
   }
@@ -637,7 +633,6 @@ input[type=radio].visually-hidden {
 @media screen and (max-width: 1199px) {
   .footer__container {
     margin: 0 auto;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -703,6 +698,7 @@ input[type=radio].visually-hidden {
 @media screen and (min-width: 1200px) {
   .mail-form {
     margin-left: auto;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {

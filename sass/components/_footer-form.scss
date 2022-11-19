@@ -1,15 +1,16 @@
-@media screen and(min-width:1200px) {
+@include pc {
 	.mail-form {
 		margin-left: auto;
+		margin-bottom: 0;
 	}
 }
 
-// @media screen and(min-width: 1200px) {
+//@include pc {
 // 	.footer__wrapper {
 // 		@include flex;
 // 	}
 // }
-@media screen and(min-width:1200px) {
+@include pc {
 	.mail-form__wrapper {
 		display: flex;
 	}
@@ -26,7 +27,8 @@
 .mail-form__email {
 	display: block;
 	padding: 14px 0 14px 16px;
-	@include centered-col(20px);
+	margin: 0 auto;
+	margin-bottom: 20px;
 	width: 100%;
 
 	font-size: 16px;
@@ -49,12 +51,12 @@
 	&:focus::placeholder {
 		color: var(--accent-color);
 	}
-	@media screen and(min-width: 480px) {
+	@include mob {
 		& {
 			width: 450px;
 		}
 	}
-	@media screen and(min-width: 1200px) {
+	@include pc {
 		& {
 			margin-right: 12px;
 			margin-bottom: 0;

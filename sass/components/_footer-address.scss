@@ -3,7 +3,7 @@
 	justify-content: center;
 	gap: 9px;
 
-	@media screen and(max-width: 1199px) {
+	@include no-pc {
 		&__item {
 			@include flex();
 		}

@@ -4,12 +4,12 @@
 	&__item {
 		@include grid-item(2);
 
-		@media screen and(min-width: 768px) {
+		@include tab {
 			& {
 				@include grid-item(3);
 			}
 		}
-		@media screen and(min-width: 1200px) {
+		@include pc {
 			& {
 				@include grid-item(6);
 			}

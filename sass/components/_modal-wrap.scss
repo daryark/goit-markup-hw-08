@@ -34,7 +34,7 @@
 	border-radius: 4px;
 	@include transition(transform);
 
-	@media screen and(min-width: 1200px) {
+	@mixin pc {
 		min-width: 528px;
 		min-height: 581px;
 	}

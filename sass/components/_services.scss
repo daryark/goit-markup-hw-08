@@ -1,7 +1,7 @@
 .services {
 	display: none;
 
-	@media screen and(min-width: 1200px) {
+	@mixin pc {
 		display: block;
 
 		&__content {
@@ -32,7 +32,7 @@
 	@extend %uppercase;
 }
 
-@media screen and(min-width: 1200px) {
+@include pc {
 	.grid-three {
 		@include grid();
 

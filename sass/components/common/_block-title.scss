@@ -7,7 +7,7 @@
 	line-height: var(--line-height-auto);
 	letter-spacing: var(--letter-spacing);
 
-	@media screen and(min-width: 1200px) {
+	@include pc {
 		& {
 			margin-bottom: 50px;
 			font-size: 36px;

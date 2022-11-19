@@ -6,7 +6,7 @@
 		align-items: center;
 		height: 60px;
 
-		@media screen and(min-width: 768px) {
+		@include tab {
 			height: 80px;
 		}
 	}
@@ -15,11 +15,11 @@
 .nav__list {
 	display: none;
 
-	@media screen and(min-width:768px) {
+	@include tab {
 		display: flex;
 		gap: 50px;
 	}
-	@media screen and(min-width:1200px) {
+	@include pc {
 		gap: 53px;
 	}
 }
@@ -33,14 +33,14 @@
 		padding-top: 26px;
 		padding-bottom: 26px;
 
-		@media screen and(min-width: 1200px) {
+		@include pc {
 			margin-right: 93px;
 			padding-top: 24px;
 			padding-bottom: 24px;
 		}
 	}
 
-	@media screen and(min-width:768px) {
+	@include tab {
 		&__item {
 			display: flex;
 			align-items: center;
@@ -105,11 +105,11 @@
 .contacts {
 	display: none;
 
-	@media screen and(min-width: 768px) {
+	@include tab {
 		display: grid;
 		gap: 10px;
 		margin-left: auto;
-		@media screen and(min-width:1200px) {
+		@include pc {
 			@include grid();
 		}
 
@@ -125,7 +125,7 @@
 			color: var(--second-color);
 			@include transition();
 
-			@media screen and(min-width:1200px) {
+			@include pc {
 				padding: 32px 0;
 				font-size: 14px;
 			}
@@ -138,7 +138,7 @@
 		&__icon--left {
 			margin-right: 8px;
 
-			@media screen and(min-width:1200px) {
+			@include pc {
 				margin-right: 10px;
 			}
 		}

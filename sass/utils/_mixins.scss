@@ -1,7 +1,6 @@
 @mixin transition($property: color) {
 	transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 @mixin transition-double($propertyOne, $propertyTwo: color) {
 	transition: $propertyOne 250ms cubic-bezier(0.4, 0, 0.2, 1), $propertyTwo 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -21,11 +20,6 @@
 	align-items: center;
 }
 
-@mixin centered-col($margin) {
-	margin: 0 auto;
-	margin-bottom: $margin;
-}
-
 @mixin retina {
 	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 		@content;
@@ -34,6 +28,26 @@
 
 @mixin mini-mob {
 	@media screen and(orientation: portrait) and(max-height: 565px), (max-width: 330px) {
+		@content;
+	}
+}
+@mixin mob {
+	@media screen and(min-width: 480px) {
+		@content;
+	}
+}
+@mixin tab {
+	@media screen and(min-width: 768px) {
+		@content;
+	}
+}
+@mixin pc {
+	@media screen and(min-width: 1200px) {
+		@content;
+	}
+}
+@mixin no-pc {
+	@media screen and(max-width: 1199px) {
 		@content;
 	}
 }
