@@ -16,7 +16,10 @@
 }
 
 .product {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
 	@include transition(box-shadow);
 
 	&:hover,
@@ -26,6 +29,8 @@
 	}
 
 	&__content {
+		flex-grow: 1;
+
 		padding: 20px 24px;
 		border: 1px solid #eeeeee;
 		border-top: none;
