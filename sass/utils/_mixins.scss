@@ -31,3 +31,9 @@
 		@content;
 	}
 }
+
+@mixin mini-mob {
+	@media screen and(orientation: portrait) and(max-height: 565px), (max-width: 330px) {
+		@content;
+	}
+}

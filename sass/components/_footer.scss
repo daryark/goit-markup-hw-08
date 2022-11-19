@@ -4,6 +4,17 @@
 
 	background-color: var(--dark-bg);
 
+	@media screen and(min-width: 768px) {
+		&__tab-wrapper {
+			@include flex(space-between);
+			align-items: baseline;
+
+			@media screen and(min-width: 1200px) {
+				gap: 70px;
+			}
+		}
+	}
+
 	&__wrapper {
 		@media screen and(max-width: 1199px) {
 			& {

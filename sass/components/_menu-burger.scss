@@ -20,7 +20,6 @@
 	}
 
 	.menu {
-		padding-left: 40px;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -29,8 +28,7 @@
 		background-color: var(--light-bg);
 
 		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		justify-content: center;
 
 		opacity: 1;
 		@include transition(opacity);
@@ -46,6 +44,21 @@
 		&.is-hidden {
 			opacity: 0;
 			pointer-events: none;
+		}
+
+		&__container {
+			padding-left: 40px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			overflow-y: scroll;
+			@media screen and(max-width: 430px) {
+				padding-left: 15px;
+			}
 		}
 
 		&__btn-close {
@@ -73,6 +86,9 @@
 			display: flex;
 			flex-direction: column;
 			gap: 32px;
+			@include mini-mob {
+				gap: 24px;
+			}
 		}
 		&__link {
 			font-weight: 500;
@@ -80,6 +96,9 @@
 			line-height: var(--line-height-auto);
 			letter-spacing: 0.02em;
 			@include transition();
+			@include mini-mob {
+				font-size: 32px;
+			}
 
 			&--active,
 			&:hover,
@@ -94,12 +113,21 @@
 		gap: 32px;
 		margin-bottom: 64px;
 
+		margin-top: 32px;
+		@include mini-mob {
+			gap: 24px;
+			margin-bottom: 40px;
+		}
+
 		&__tel {
 			margin-bottom: 32px;
 			font-weight: 500;
 			font-size: 34px;
 			line-height: var(--line-height-auto);
 			letter-spacing: 0.02em;
+			@include mini-mob {
+				font-size: 28px;
+			}
 
 			color: var(--accent-color);
 		}
@@ -110,6 +138,9 @@
 			font-size: 24px;
 			line-height: 28px;
 			letter-spacing: 0.02em;
+			@include mini-mob {
+				font-size: 20px;
+			}
 
 			color: var(--second-color);
 		}
@@ -117,9 +148,13 @@
 
 	.menu-socials {
 		@include flex(start);
+		flex-wrap: wrap;
 		margin-left: -10px;
-		margin-bottom: 48px;
+		margin-bottom: 38px;
 
+		&__item {
+			margin-bottom: 10px;
+		}
 		&__link {
 			padding: 0 10px;
 
