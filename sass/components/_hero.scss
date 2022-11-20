@@ -15,19 +15,20 @@
 		background-image: var(--hero-gradient), url(../images/hero/mob/hero-bg-img-mob2x.jpg);
 	}
 
-	@include mob {
+	@media screen and(min-width: 480px) and(max-width: 768px) {
 		background-image: var(--hero-gradient), url(../images/hero/tab/hero-bg-img-tab.jpg);
 		@include retina {
 			background-image: var(--hero-gradient), url(../images/hero/tab/hero-bg-img-tab2x.jpg);
 		}
-		@include tab {
+	}
+	@include tab {
+		background-image: var(--hero-gradient), url(../images/hero/desktop/hero-bg-img.jpg);
+		@include retina {
+			background-image: var(--hero-gradient), url(../images/hero/desktop/hero-bg-img2x.jpg);
+		}
+		@include pc {
 			padding-top: 200px;
 			padding-bottom: 200px;
-
-			background-image: var(--hero-gradient), url(../images/hero/desktop/hero-bg-img.jpg);
-			@include retina {
-				background-image: var(--hero-gradient), url(../images/hero/desktop/hero-bg-img2x.jpg);
-			}
 		}
 	}
 }
