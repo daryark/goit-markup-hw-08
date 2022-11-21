@@ -135,6 +135,17 @@
 				color: var(--accent-color);
 			}
 		}
+		@include no-pc {
+			&__email {
+				width: 14px;
+				height: 10px;
+			}
+			&__phone {
+				width: 10px;
+				height: 14px;
+			}
+		}
+
 		&__icon--left {
 			margin-right: 8px;
 

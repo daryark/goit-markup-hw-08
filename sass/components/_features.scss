@@ -24,12 +24,17 @@
 	}
 	&__title {
 		margin-bottom: 10px;
+		text-align: center;
 
 		font-weight: 700;
 		font-size: 14px;
 		line-height: var(--line-height-auto);
 		letter-spacing: var(--letter-spacing);
 		@extend %uppercase;
+
+		@include tab {
+			text-align: left;
+		}
 	}
 	&__text {
 		font-size: 14px;
