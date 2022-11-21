@@ -1,7 +1,7 @@
 .services {
 	display: none;
 
-	@mixin pc {
+	@include pc {
 		display: block;
 
 		&__content {

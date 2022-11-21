@@ -483,6 +483,30 @@ input[type=radio].visually-hidden {
 .services {
   display: none;
 }
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+  }
+  .services__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    padding: 27px;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .services__text {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: var(--line-height-auto);
+    letter-spacing: var(--letter-spacing);
+    color: var(--inverse-color);
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .grid-three {
