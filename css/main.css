@@ -126,6 +126,7 @@ input[type=radio].visually-hidden {
 
 .thumb {
   position: relative;
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -395,26 +396,30 @@ input[type=radio].visually-hidden {
     background-image: var(--hero-gradient), url(../images/hero/mob/hero-bg-img-mob2x.jpg);
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .hero-section {
     background-image: var(--hero-gradient), url(../images/hero/tab/hero-bg-img-tab.jpg);
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: var(--hero-gradient), url(../images/hero/tab/hero-bg-img-tab2x.jpg);
   }
 }
-@media screen and (min-width: 480px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: var(--hero-gradient), url(../images/hero/desktop/hero-bg-img.jpg);
   }
 }
-@media screen and (min-width: 480px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: var(--hero-gradient), url(../images/hero/desktop/hero-bg-img2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -477,30 +482,6 @@ input[type=radio].visually-hidden {
 
 .services {
   display: none;
-}
-@media screen and (min-width: 1200px) {
-  .services {
-    display: block;
-  }
-  .services__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    padding: 27px;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-  }
-  .services__text {
-    margin: 0;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: var(--line-height-auto);
-    letter-spacing: var(--letter-spacing);
-    color: var(--inverse-color);
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -628,6 +609,10 @@ input[type=radio].visually-hidden {
     margin: 0 auto;
     margin-bottom: 60px;
   }
+}
+
+.mail-form.footer__wrapper {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1199px) {
@@ -795,12 +780,6 @@ input[type=radio].visually-hidden {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    min-width: 528px;
-    min-height: 581px;
-  }
 }
 
 .btn-close {

@@ -2,12 +2,12 @@
 @import "./base/reset";
 @import "./base/body";
 
+@import "./utils/mixins";
 @import "./utils/container";
 @import "./utils/section";
 @import "./utils/visually-hidden";
 @import "./utils/thumb";
 @import "./utils/placeholders";
-@import "./utils/mixins";
 
 @import "./components/common/logo";
 @import "./components/common/primary-btn";
